@@ -81,7 +81,7 @@ const BLOG = {
     process.env.NEXT_PUBLIC_GREETING_WORDS_BACK_SPEED || 100,
 
   // uuid重定向至 slug
-  UUID_REDIRECT: process.env.UUID_REDIRECT || false
+  UUID_REDIRECT: process.env.UUID_REDIRECT || true, // 是否开启uuid重定向至slug，开启后访问旧uuid链接会自动跳转到新slug链接，关闭后访问旧uuid链接会报404错误。建议开启。
 }
 
 module.exports = BLOG
